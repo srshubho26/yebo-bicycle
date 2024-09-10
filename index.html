@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yebo Bicycle</title>
+
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Carousel css -->
+     <link rel="stylesheet" href="vendors/sr-slide.css">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                colors: {
+                    "title": "#353738",
+                    "desc": "#848789",
+                    "alter": "#f7f7f7",
+                    "overlay": "#64c29e",
+                    "discover": "#282f35"
+                },
+                fontFamily: {
+                    "lato": ["Lato", "sans-serif"]
+                }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="font-lato">
+    <header class="bg-[url(imgs/header_bg.png)] bg-no-repeat bg-center bg-cover bg-fixed py-10 h-lvh">
+        <nav class="">
+            <a href="#" class="block md:hidden w-fit mx-auto"><img src="imgs/logo.png"></a>
+            <ul class="fixed transition-all top-0 -left-48 w-48 h-screen md:h-auto bg-[#ffffffed] md:bg-transparent md:w-auto md:static flex flex-col md:flex-row gap-5 md:gap-12 justify-center items-center border-r border-stone-300 z-10">
+                <button id="navToggler" class="border md:hidden border-stone-700 border-l-0 rounded-r absolute -right-5 bg-stone-500 top-12 w-5 h-16"><img class="-rotate-90" src="imgs/arrow.png" alt=""></button>
+                <li><a class="font-bold text-sm text-[#4d4959]" href="#">About Us</a></li>
+                <li><a class="font-bold text-sm text-[#4d4959]" href="#">Work</a></li>
+                <li class="hidden md:block"><a href="#"><img src="imgs/logo.png"></a></li>
+                <li><a class="font-bold text-sm text-[#4d4959]" href="#">Shop</a></li>
+                <li><a class="font-bold text-sm text-[#4d4959]" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="py-28 px-2 text-center bg-alter">
+                <img class="mx-auto" src="imgs/icon1.png">
+                <h2 class="text-lg text-title font-bold my-5 min-[1800px]:text-3xl">A NEW GENERATION OF VINTAGE BIKE</h2>
+                <p class="text-desc text-lg font-light max-w-screen-lg mx-auto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            </div>
+
+            <div class="sm:grid grid-flow-dense grid-cols-4 lg:grid-cols-3 grid-rows-10 lg:grid-rows-9 md:max-h-[300vh] lg:max-h-full">
+                <div class="col-span-4 lg:col-span-2 row-span-2 lg:row-span-3 relative">
+                    <img class="object-cover w-full h-full" src="imgs/service1.png">
+                    <img src="imgs/logo2.png" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 md:w-auto">
+                </div>
+
+                <div class="col-span-2 lg:col-span-1 col-start-1 lg:col-start-auto row-span-2 p-5 xl:p-10 text-center flex items-center justify-center">
+                    <div class="max-w-2xl">
+                        <img class="mx-auto" src="imgs/icon2.png">
+                        <h2 class="text-lg text-title font-bold my-5 min-[1800px]:text-3xl">vintage Oliva</h2>
+                        <p class="text-desc text-lg font-light text-justify min-[1800px]:text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
+                    </div>
+                </div>
+
+                <div class="col-span-2 col-start-1 lg:col-start-auto lg:col-span-1 row-span-1 relative">
+                    <img class="object-cover w-full h-full" src="imgs/service2.png">
+                    <img src="imgs/arrow.png" class="absolute top-0 left-1/2 -translate-x-1/2">
+                </div>
+
+                <div class="col-span-2 lg:col-span-1 col-start-3 lg:col-start-auto row-span-2 p-5 xl:p-10 text-center flex items-center justify-center">
+                    <div class="max-w-2xl">
+                        <img class="mx-auto" src="imgs/icon3.png">
+                        <h2 class="text-lg text-title font-bold my-5 min-[1800px]:text-3xl">La Boriosa</h2>
+                        <p class="text-desc text-lg font-light text-justify min-[1800px]:text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
+                    </div>
+                </div>
+
+                <div class="col-span-2 lg:col-span-1 lg:col-start-1 row-span-1 relative">
+                    <img class="object-cover w-full h-full" src="imgs/service3.png">
+                    <img src="imgs/arrow.png" class="absolute top-0 left-1/2 -translate-x-1/2">
+                </div>
+
+                <div class="col-span-4 lg:col-span-2 row-span-2 lg:row-span-3 relative">
+                    <img class="object-cover w-full h-full" src="imgs/service4.png">
+                    <img src="imgs/logo3.png" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 md:w-auto">
+                </div>
+
+                <div class="col-span-1 row-span-2 lg:row-span-3 relative">
+                    <img class="object-cover w-full h-full" src="imgs/service5.png">
+                    <img src="imgs/logo4.png" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 md:w-auto">
+                </div>
+
+                <div class="col-span-2 lg:col-span-1 row-span-2 p-5 xl:p-10 text-center flex items-center justify-center">
+                    <div class="max-w-2xl">
+                        <img class="mx-auto" src="imgs/icon4.png">
+                        <h2 class="text-lg text-title font-bold my-5 min-[1800px]:text-3xl">retrò Bike - M. Hulot</h2>
+                        <p class="text-desc text-lg font-light text-justify min-[1800px]:text-2xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
+                    </div>
+                </div>
+
+                <div class="col-span-4 lg:col-span-1 row-span-1 relative">
+                    <img class="object-cover w-full h-full" src="imgs/service6.png">
+                    <img src="imgs/arrow.png" class="absolute top-0 left-1/2 -translate-x-1/2">
+                </div>
+
+                <div class="col-span-1 row-span-2 lg:row-span-3 lg:col-start-3 lg:row-start-7">
+                    <img class="object-cover w-full h-full" src="imgs/service7.png">
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-alter">
+            <div class="sr-slide-wrap">
+                <div class="slides">
+
+                    <div class="single-slide flex justify-center items-center">
+                        <div class="text-center">
+                            <img src="imgs/tw_icon.png" class="mx-auto">
+                            <h3 class="text-title font-bold text-lg my-7">AOD New York @aod <span class="text-desc font-light mx-3"> / </span> <span class="text-desc font-light">35 min</span></h3>
+                            <p class="italic text-desc text-base sm:text-xl max-w-screen-lg mx-auto px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="single-slide flex justify-center items-center">
+                        <div class="text-center">
+                            <img src="imgs/tw_icon.png" class="mx-auto">
+                            <h3 class="text-title font-bold text-lg my-7">AOD New York @aod <span class="text-desc font-light mx-3"> / </span> <span class="text-desc font-light">35 min</span></h3>
+                            <p class="italic text-desc text-base sm:text-xl max-w-screen-lg mx-auto px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="single-slide flex justify-center items-center">
+                        <div class="text-center">
+                            <img src="imgs/tw_icon.png" class="mx-auto">
+                            <h3 class="text-title font-bold text-lg my-7">AOD New York @aod <span class="text-desc font-light mx-3"> / </span> <span class="text-desc font-light">35 min</span></h3>
+                            <p class="italic text-desc text-base sm:text-xl max-w-screen-lg mx-auto px-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navigator bullets pb-8 md:pb-16">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="grid grid-flow-dense grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 grid-rows-6 sm:grid-rows-3 lg:grid-rows-2">
+                <div class="col-span-1 row-span-1 sm:row-start-2 lg:row-start-auto bg-overlay relative group">
+                    <a href="#">
+                        <img src="imgs/icon_text.png" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                        <img class="w-full h-full object-cover group-hover:opacity-10 transition" src="imgs/shop1.png">
+                    </a>
+                </div>
+                <div class="col-span-1 row-span-1 sm:row-start-2 lg:row-start-auto bg-overlay relative group">
+                    <a href="#">
+                        <img src="imgs/icon_text.png" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                        <img class="w-full h-full object-cover group-hover:opacity-10 transition" src="imgs/shop2.png">
+                    </a>
+                </div>
+                <div class="col-span-2 lg:row-start-2 row-span-1 bg-overlay relative group">
+                    <a href="#">
+                        <img src="imgs/icon_text.png" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                        <img class="w-full h-full object-cover group-hover:opacity-10 transition" src="imgs/shop3.png">
+                    </a>
+                </div>
+                <div class="col-start-1 lg:col-start-auto col-span-1 row-span-2 row-start-2 lg:row-start-auto bg-overlay relative group">
+                    <a href="#">
+                        <img src="imgs/icon_text.png" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                        <img class="w-full h-full object-cover group-hover:opacity-10 transition" src="imgs/shop4.png">
+                    </a>
+                </div>
+                <div class="col-span-1 row-span-2 sm:row-start-2 lg:row-start-auto bg-overlay relative group">
+                    <a href="#">
+                        <img src="imgs/icon_text.png" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                        <img class="w-full h-full object-cover group-hover:opacity-10 transition" src="imgs/shop5.png">
+                    </a>
+                </div>
+                <div class="col-span-2 row-span-1 bg-overlay relative group">
+                    <a href="#">
+                        <img src="imgs/icon_text.png" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                        <img class="w-full h-full object-cover group-hover:opacity-10 transition" src="imgs/shop6.png">
+                    </a>
+                </div>
+                <div class="col-span-1 row-span-1 sm:row-start-3 lg:row-start-auto bg-overlay relative group">
+                    <a href="#">
+                        <img src="imgs/icon_text.png" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                        <img class="w-full h-full object-cover group-hover:opacity-10 transition" src="imgs/shop7.png">
+                    </a>
+                </div>
+                <div class="col-span-1 row-span-1 sm:row-start-3 lg:row-start-auto bg-overlay relative group">
+                    <a href="#">
+                        <img src="imgs/icon_text.png" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                        <img class="w-full h-full object-cover group-hover:opacity-10 transition" src="imgs/shop8.png">
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-discover py-10 lg:py-20">
+                <a href="#" class="text-white border border-[#94979a] font-bold uppercase text-sm block w-fit mx-auto tracking-wider px-14 sm:px-20 py-5 rounded-md hover:bg-alter hover:text-discover transition">Discover The Shop</a>
+            </div>
+        </section>
+
+        <section class="py-28 px-2">
+            <div class="max-w-xl mx-auto">
+                <img src="imgs/logo.png" class="mx-auto">
+                <p class="text-center my-8 text-desc text-xl italic font-semibold">Stay on this saddle!</p>
+
+                <form class="w-full flex gap-3">
+                    <input type="email" placeholder="enter your email..." class="px-6 py-5 sm:py-7 border border-[#d3d7d9] placeholder:text-desc outline-none grow italic">
+                    <button type="submit" class="uppercase bg-overlay text-white text-2xl px-5 sm:px-10 border border-overlay hover:bg-white hover:text-overlay">Go</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-alter py-16 md:py-24 px-2">
+        <div class="max-w-screen-lg mx-auto md:flex justify-between items-center">
+            <div>
+                <address class="text-desc text-base text-center md:text-left">
+                    <p class="font-extrabold">AOD New York</p>
+                    <p class="italic font-semibold">2250 Lexington Avenue</p>
+                    <p class="italic font-semibold">New York, NY 10035  - info@domain.com</p>
+                </address>
+            </div>
+
+            <div class="text-center flex justify-center gap-4 my-10 md:my-0">
+                <a href="#"><img src="imgs/twitter_icon.png"></a>
+                <a href="#"><img src="imgs/fb_icon.png"></a>
+                <a href="#"><img src="imgs/pinterest.png"></a>
+            </div>
+
+            <div class="flex justify-center md:justify-end gap-3 items-center">
+                <span class="text-desc text-md italic font-semibold">Handcrafted by</span>
+                <img src="imgs/yebo.png" alt="yebo">
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Carousel Js -->
+    <script src="vendors/sr-slide.js"></script>
+
+    <script>
+        const selector = el => document.querySelector(el);
+        selector("header #navToggler").addEventListener('click', ()=>{
+            selector("header nav > ul").style.left = selector("header nav > ul").style.left==="0px" ? "-192px" : "0px";
+        });
+    </script>
+</body>
+</html>
